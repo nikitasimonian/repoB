@@ -2,8 +2,7 @@ cmake_minimum_required(VERSION 3.21)
 project(B)
 
 if (NOT TARGET ${PROJECT_NAME})
-    add_library(${PROJECT_NAME} STATIC)
-    target_sources(${PROJECT_NAME} PUBLIC
+    add_library(${PROJECT_NAME} STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}/b.h
         ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME}/b.cpp
     )
